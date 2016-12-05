@@ -12,6 +12,7 @@
 		9F693EE61DF54463002A88B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F693EE41DF54463002A88B8 /* Main.storyboard */; };
 		9F693EE81DF54463002A88B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F693EE71DF54463002A88B8 /* Assets.xcassets */; };
 		9F693EEB1DF54463002A88B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F693EE91DF54463002A88B8 /* LaunchScreen.storyboard */; };
+		9F693EF31DF551CB002A88B8 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F693EF21DF551CB002A88B8 /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9F693EE71DF54463002A88B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F693EEA1DF54463002A88B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F693EEC1DF54463002A88B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F693EF21DF551CB002A88B8 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				9F693EE01DF54463002A88B8 /* AppDelegate.swift */,
 				9F693EE21DF54463002A88B8 /* ViewController.swift */,
+				9F693EF21DF551CB002A88B8 /* DefinitionViewController.swift */,
 				9F693EE41DF54463002A88B8 /* Main.storyboard */,
 				9F693EE71DF54463002A88B8 /* Assets.xcassets */,
 				9F693EE91DF54463002A88B8 /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					9F693EDC1DF54463002A88B8 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = MNL66JUY5Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F693EE31DF54463002A88B8 /* ViewController.swift in Sources */,
+				9F693EF31DF551CB002A88B8 /* DefinitionViewController.swift in Sources */,
 				9F693EE11DF54463002A88B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +265,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MNL66JUY5Q;
 				INFOPLIST_FILE = "Emoji Dictionary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryandenny.Emoji-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MNL66JUY5Q;
 				INFOPLIST_FILE = "Emoji Dictionary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryandenny.Emoji-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";

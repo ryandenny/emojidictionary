@@ -21,7 +21,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         emojiListTableView.dataSource = self
         emojiListTableView.delegate = self
-    
         
     }
 
@@ -35,6 +34,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = emojis[indexPath.row]
         return cell
     }
+    
+    //when I tap on a row
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let emoji = emojis[indexPath.row] //send the current emoji selected
+        performSegue(withIdentifier: "moveSegue", sender: emoji)
+    }
+    
+    //this is how we send stuff to the new segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //print(sender)
+        let defVC = segue.destination as! DefinitionViewController
+        defVC.emoji = sender as! String
+    }
+    
     
     
     override func didReceiveMemoryWarning() {
